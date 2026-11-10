@@ -218,3 +218,46 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ==========================================
+# Vayitals - Custom Project Ignores
+# ==========================================
+
+# Datasets and raw video/signal files (prevent pushing gigabytes of data)
+datasets/*
+!datasets/.gitkeep
+!datasets/README.md
+*.avi
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.mat
+
+# Model checkpoints & weights
+outputs/*
+!outputs/.gitkeep
+!outputs/README.md
+experiments/*
+!experiments/.gitkeep
+!experiments/README.md
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.bin
+*.pkl
+*.joblib
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# Environment variables & local configs
+.env
+.env.*
+!.env.example
